@@ -27,6 +27,7 @@ export  class SceneManager{
         const box = MeshBuilder.CreateBox('box',{size:4},this.scene);
         this.gizmoManager = new gizmoManager(this);
         let light = new HemisphericLight("light",Vector3.Up(),this.scene);
+        console.log(123);
         this.mitt = mittEmit;
         sceneInit(this);
         mittScene(this.mitt,this.scene);
